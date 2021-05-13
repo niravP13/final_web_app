@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ points.lname }}</h5>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">First Name: {{ points.fname }}</li>
+        <li class="list-group-item">SSN: {{ points.ssn }}</li>
+        <li class="list-group-item">Test1 Points: {{ points.test1 }}</li>
+        <li class="list-group-item">Test2 Points: {{ points.test2 }}</li>
+        <li class="list-group-item">Test3 Points: {{ points.test3 }}</li>
+        <li class="list-group-item">Test4 Points: {{ points.test4 }}</li>
+        <li class="list-group-item">Final Points: {{ points.final }}</li>
+        <li class="list-group-item">Final Grade: {{ points.grade }}</li>
+
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{ points.lname }}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{ points.lname }}" method="post"><button type="submit" class="btn btn-danger">delete</button></form>
+
+
+{% endblock %}

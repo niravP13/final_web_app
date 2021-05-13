@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/marks/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="lname">student Lname</label>
+            <input id="lname" type="text" class="form-control" placeholder="student Lname" name="lname">
+        </div>
+        <div class="col">
+            <label for="fname">student Fname</label>
+            <input id="fname" t ype="text" class="form-control" placeholder="student Fname"
+                   name="fname">
+        </div>
+        <div class="col">
+            <label for="ssn">student ssn</label>
+            <input id="ssn" type="text" class="form-control" placeholder="student ssn" name="ssn">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="test1">first test</label>
+            <input id="test1" type="text" class="form-control" placeholder="first test" name="test1">
+        </div>
+        <div class="col">
+            <label for="test2">second test</label>
+            <input id="test2" type="text" class="form-control" placeholder="second test" name="test2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="test3">third test</label>
+            <input id="test3" type="text" class="form-control" placeholder="third test"
+                   name="test3">
+        </div>
+        <div class="col">
+            <label for="test4">fourth test</label>
+            <input id="test4" type="text" class="form-control" placeholder="fourth test" name="test4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="final">final score</label>
+            <input id="final" type="text" class="form-control" placeholder="final score"
+                   name="final">
+        </div>
+        <div class="col">
+            <label for="grade">grade category</label>
+            <input id="grade" type="text" class="form-control" placeholder="grade category" name="grade">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}
