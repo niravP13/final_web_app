@@ -18,9 +18,10 @@
 
 ### Steps:
 * Clone the repository -
-
+ https://github.com/niravP13/final_web_app.git
   
-* Go to the Final_Web_Application folder - 
+* Go to the final_web_app folder - 
+ cd final_web_app
 
   
 * Build and run the code - 
